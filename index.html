@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" media="screen" href="public/css/style.css" />
 </head>
-<body class="#546e7a blue-grey darken-1 white-text">
+<body class="#424242 grey darken-3 white-text">
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class="transparent z-depth-0">
@@ -27,33 +27,33 @@
     <!-- Carousel -->
     <div id="top" class="slider">
         <ul class="slides">
-          <li>
-            <img src="public/images/razer.jpg">
-            <div class="caption center-align">
-              <h3>Arnold R Zimmerman Jr</h3>
-              <h5 class="white-text text-lighten-3">Web Developer</h5>
-            </div>
+            <li>
+                <img src="public/images/razer.jpg">
+                <div class="caption center-align">
+                    <h3>Arnold R Zimmerman Jr</h3>
+                    <h5 class="white-text text-lighten-3">Web Developer</h5>
+                </div>
           </li>
           <li>
-            <img src="public/images/pr-alien.jpg">
-            <div class="caption right-align">
-              <h3>Tech Enthusiast</h3>
-              <h5 class="white-text text-lighten-3">Always learning.</h5>
-            </div>
+                <img src="public/images/pr-alien.jpg">
+                <div class="caption right-align">
+                    <h3>Tech Enthusiast</h3>
+                    <h5 class="white-text text-lighten-3">Always learning.</h5>
+                </div>
           </li>
           <li>
-            <img src="public/images/cloud.jpg">
-            <div class="caption left-align">
-              <h3>Problem Solver</h3>
-              <h5 class="white-text text-lighten-3">With an eye for detail.</h5>
-            </div>
+                <img src="public/images/cloud.jpg">
+                <div class="caption left-align">
+                    <h3>Problem Solver</h3>
+                    <h5 class="white-text text-lighten-3">With an eye for detail.</h5>
+                </div>
           </li>
           <li>
-            <img src="public/images/pr-river.jpg">
-            <div class="caption right-align">
-              <h3>Goal Achiever</h3>
-              <h5 class="white-text text-lighten-3">Making things better.</h5>
-            </div>
+                <img src="public/images/pr-river.jpg">
+                <div class="caption right-align">
+                    <h3>Goal Achiever</h3>
+                    <h5 class="white-text text-lighten-3">Making things better.</h5>
+                </div>
           </li>
         </ul>
     </div>
@@ -62,10 +62,31 @@
     <div class="container white-text">
         <!-- About Me -->
         <div class="row">
-            <div class="col s12">
+            <div class="section col s12">
                 <img src="public/images/me1.png" class="circle responsive-img" alt="Arnold R Zimmerman Jr">
-                <h4 class="section" name="aboutMe">About Me</h4>
-                <p class="flow-text">Professionally, I come from a background in social work. I have a BA in Psychology as well as several years of experience working for a non-profit, first as a social worker and then as a tech support specialist. Now I spend my time writing code and developing applications.</p> 
+                <h4 name="aboutMe">About Me</h4>
+                <p class="flow-text">Professionally, I come from a background in social work. I have a BA in Psychology as well as several 
+                    years of experience working for a non-profit, first as a social worker and then as a tech support specialist. Now I spend 
+                    my time writing code and developing applications.</p> 
+                    
+                <div id="more-1" class="fulltext">
+                    <p class="flow-text">During my time as a social worker, I worked as a Service Coordinator, helping diverse sets of teams 
+                        with achieving goals and overcoming obstacles. My strong interpersonal and communication skills allowed me to quickly 
+                        build rapport with team members and delegate my client’s needs to the team in an effective manner. I also helped my 
+                        organization improve workflows by assisting with the development of new forms and processes.</p>
+
+                    <p class="flow-text">Through my work developing forms, I found my way into my organization’s MIS department, where I began 
+                        working as a System Support Specialist. There my job duties consisted of training staff on how to use relevant applications, 
+                        creating detailed instructional video guides, implementing new application into the workflow of the organization’s various 
+                        program teams, and developing the organization's SharePoint websites and structure.</p>
+    
+                    <p class="flow-text">Working on my organization's SharePoint environment inspired me to learn more about web development, which 
+                        led me to enroll in the Full-Stack Web Development program at UT. Going through the program not only helped me develop the 
+                        skill set to create and design useful web apps but also sparked a passion for it.</p>
+                </div>
+                <a aria-expanded="false" aria-controls="more-1" class="toggle-content waves-effect waves-light btn"><span class="text">Show More</span> 
+                    <span class="visually-hidden">About Me</span>
+                </a>
             </div>
         </div>
         <!-- About Me End -->
@@ -75,7 +96,8 @@
         <div class="row">
             <div class="col s12">
                 <h4 class="section" name="portfolio">Portfolio</h4>
-                    <div class="card">
+                <div class="col s6">
+                    <div class="card"> <!-- Know Your Rep -->
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="public/images/congress.jpg">
                         </div>
@@ -85,14 +107,32 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Know Your Rep<i class="material-icons right">close</i></span>
-                                <p class="grey-text">This is a site that allows users to discover and connect with their state and federal representatives with ease.</p>
+                                <p class="grey-text">This is a site that allows users to discover and connect with their state and federal 
+                                    representatives with ease.</p>
                         </div>
                     </div>
-        
+                </div>
+
+                <div class="col s6">
+                    <div class="card"> <!-- Friend Finder -->
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="public/images/friend-finder.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Friend Finder<i class="material-icons right"></i></span>
+                                <p><a href="https://friend-finder-arz.herokuapp.com/">Check it out!</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Friend Finder<i class="material-icons right">close</i></span>
+                                <p class="grey-text">Friend Finder is a basic dating web application. This site will take in results from user 
+                                    surveys, then compare their answers with those from other users. The app will then display the name and 
+                                    picture of the user with the best overall match.</p>
+                        </div>
+                    </div>
+                </div>
 
 
 
-            
             </div>
         </div>
         <!-- Portfolio End -->
