@@ -96,7 +96,11 @@ h6 {
 }
 
 #contact-info {
-    margin-top: 7.5px;
+    margin-top: 27.5px;
+}
+
+#email-box {
+    margin-top: 20px;
 }
 
 #email-submit {
