@@ -7,9 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="public/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" 
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
-<body class="#424242 grey darken-3 white-text">
+<body class="#424242 grey darken-3">
     <!-- Navbar -->
     <div class="navbar-fixed">
         <nav class="transparent z-depth-0">
@@ -59,9 +62,9 @@
     </div>
     <!-- Carousel End -->
     <!-- Content -->
-    <div class="container white-text">
+    <div>
         <!-- About Me -->
-        <div class="row">
+        <div class="row white-text">
             <div class="section col s12">
                 <img src="public/images/me1.png" class="circle responsive-img" alt="Arnold R Zimmerman Jr">
                 <a class="white-text"  name="aboutMe"><h4>About Me</h4></a>
@@ -84,7 +87,7 @@
                         led me to enroll in the Full-Stack Web Development program at UT. Going through the program not only helped me develop the 
                         skill set to create and design useful web apps but also sparked a passion for it.</p>
                 </div>
-                <a aria-expanded="false" aria-controls="more-1" class="toggle-content waves-effect waves-light btn"><span class="text">Show More</span> 
+                <a aria-expanded="false" aria-controls="more-1" class="toggle-content waves-effect waves-light btn #43a047 green darken-1"><span class="text">Show More</span> 
                     <span class="visually-hidden">About Me</span>
                 </a>
             </div>
@@ -93,11 +96,13 @@
 
         
         <!-- Portfolio -->
+    <div class="section2 #43a047 green darken-1">
+
         <div class="row"> <!-- Row 1 -->
             <div class="col s12">
-                    <a class="white-text" name="portfolio"><h4 class="section">Portfolio</h4></a>
+                    <a class="white-text" name="portfolio"><h4>My Portfolio</h4></a>
                 <div class="col s6">
-                    <div class="card"> <!-- Know Your Rep -->
+                    <div class="card z-depth-3"> <!-- Know Your Rep -->
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="public/images/congress.jpg">
                         </div>
@@ -107,14 +112,14 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Know Your Rep<i class="material-icons right">close</i></span>
-                                <p class="grey-text">Know Your Rep is a site that allows users to discover and connect with their state and federal 
+                                <p class="card-text grey-text">Know Your Rep is a site that allows users to discover and connect with their state and federal 
                                     representatives with ease. Instructions on how to use the site are listed on the webpage.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s6">
-                    <div class="card"> <!-- Eat-Da-Burger -->
+                    <div class="card z-depth-3"> <!-- Eat-Da-Burger -->
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="public/images/burger.jpg">
                         </div>
@@ -124,9 +129,9 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Eat Da Burger<i class="material-icons right">close</i></span>
-                                <p class="grey-text">Eat-Da-Burger is a basic full-stack web application. The app displays a burger menu, which 
-                                    allows users to "eat da burger" by clicking the appropriate button. Once eaten, the app moves the burger from 
-                                    the "Tasty Burger Menu" section into the devoured section.</p>
+                                <p class="card-text grey-text">Eat-Da-Burger is a basic full-stack web application. The app displays a burger menu, which 
+                                    allows users to eat a burger by clicking the appropriate button. The app then moves the burger into the 
+                                    devoured section.</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +141,7 @@
         <div class="row"> <!-- Row 2 -->
                 <div class="col s12">
                     <div class="col s6">
-                        <div class="card"> <!-- Bamazon -->
+                        <div class="card z-depth-3"> <!-- Bamazon -->
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="public/images/bamazon.jpg">
                             </div>
@@ -146,17 +151,14 @@
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Bamazon<i class="material-icons right">close</i></span>
-                                    <p class="grey-text">Bamazon is an Amazon-like storefront node-app that utilizes MySQL. The app allows uses 
-                                        to view and purchase store products. Running the app using node will display Bamazon's inventory to the 
-                                        user and prompt the user to select what item they would like to purchase and the quantity of that item. 
-                                        If the user tries to purchase more than what Bamazon has in stock, the app will inform the user that their 
-                                        isn't enough stock to fulfil their order.</p>                                    
+                                    <p class="card-text grey-text">Bamazon is an Amazon-like storefront node-app that utilizes MySQL. The app allows uses 
+                                        to view and purchase store products.</p>                                    
                             </div>
                         </div>
                     </div>
     
                     <div class="col s6">
-                            <div class="card"> <!-- Friend Finder -->
+                            <div class="card z-depth-3"> <!-- Friend Finder -->
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="public/images/friend-finder.jpg">
                                 </div>
@@ -166,8 +168,8 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Friend Finder<i class="material-icons right">close</i></span>
-                                        <p class="grey-text">Friend Finder is a basic dating web application. This site will take in results from user 
-                                            surveys, then compare their answers with those from other users. The app will then display the name and 
+                                        <p class="card-text grey-text">Friend Finder is a simple dating web app. This site will take in results from user 
+                                            surveys, then compare their answers with those from other users. It then displays the name and 
                                             picture of the user with the best overall match.</p>
                                 </div>
                             </div>
@@ -178,7 +180,7 @@
             <div class="row"> <!-- Row 3 -->
                     <div class="col s12">
                         <div class="col s6">
-                            <div class="card"> <!-- Hangman -->
+                            <div class="card z-depth-3"> <!-- Hangman -->
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="public/images/hangman.jpeg">
                                 </div>
@@ -188,14 +190,14 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Hangman<i class="material-icons right">close</i></span>
-                                        <p class="grey-text">This is a "Classic Video Games" themed game of Hangman. The rules of the game are standard 
+                                        <p class="card-text grey-text">This is a "Classic Video Games" themed game of Hangman. The rules of the game are standard 
                                             hangman rules.</p>
                                 </div>
                             </div>
                         </div>
         
                         <div class="col s6">
-                            <div class="card"> <!-- Dark Crystal Collector -->
+                            <div class="card z-depth-3"> <!-- Dark Crystal Collector -->
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="activator" src="public/images/darkcrystal.jpg">
                                 </div>
@@ -205,39 +207,88 @@
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4">Dark Crystal Collector<i class="material-icons right">close</i></span>
-                                        <p class="grey-text">Remember the movie "The Dark Crystal"? I was one quirky movie.</p>
-                                        <p class="grey-text">Dark Crystal Collector is a "Crystal Collector" style game based on the movie. The rules of the game will be listed on the webpage.</p>
+                                        <p class="card-text grey-text">Remember the movie "The Dark Crystal"? I was one quirky movie.</p>
+                                        <p class="card-text grey-text">Dark Crystal Collector is a "Crystal Collector" style game based on the movie. The rules of the game will be listed on the webpage.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+    </div>
         <!-- Portfolio End -->
 
         <!-- Contact -->
-        <div class="row">
-                <div class="col s12">
-                    <a class="white-text" name="contact"><h4 class="section">Contact</h4></a>
+        <div class="#0d47a1 blue darken-4">
+            <div class="row">
+                <div class="section3 col s12">
+                    <a class="white-text" name="contact"><h4>Let's Connect!</h4></a>
+                    <div id="contact-info" class="col s6 white-text">
+                        <h5>Contact Info</h5>
+                        <p class="connect flow-text">I'd love to hear from you!</p>
+                        <p id="ciline2" class="connect flow-text">Feel free to contact me by phone, email, or social media.</p>
+                        
+                        <p class="connect flow-text">Email: arnoldrz2@gmail.com</p>
+                        <p class="connect flow-text">Tel: (956) 744-7445</p>
+                    </div>
 
+                    <div class="col s6">
+                        <form class="card-panel #ffffff white z-depth-3" action="mailto:arnoldrz2@gmail.com" method="post" enctype="text/plain">
+                            <div class="input-field col s6">
+                                <input class="gray-text" id="name" name="name" type="text" class="validate" required="required">
+                                <label class="gray-text" for="name">Name</label>
+                            </div>
+    
+                            <div class="input-field col s6">
+                                <input class="gray-text" id="email" name="email" type="email" class="validate" required="required">
+                                <label class="gray-text" for="email">Email</label>
+                            </div>
 
+                            <div class="input-field col s12">
+                                <input class="gray-text" id="subject" name="subject" type="text" class="validate" required="required">
+                                <label class="gray-text" for="subject">Subject</label>
+                            </div>
 
-
-                
+                            <div class="input-field col s12">
+                                <textarea id="body" class="materialize-textarea" name="body" data-length="120" required="required"></textarea>
+                                <label class="gray-text" for="body">Body</label>
+                            </div>
+                            
+                            <button id="email-submit" class="btn waves-effect waves-light #43a047 green darken-1" type="submit">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
+                    </div>
+               
                 </div>
             </div>
+
+            <div class="row">
+                <div style="font-size:9em; text-align:center;" class="col s4 social">
+                    
+                    <a href="https://www.linkedin.com/in/arnold-zimmerman/" target="_blank"><i class="fab fa-linkedin white-text" alt="LinkedIn"></i></a>
+                </div>
+
+                <div style="font-size:9em; color:white; text-align:center" class="col s4 social">
+                    <a href="https://github.com/arnoldrz2" target="_blank"><i class="fab fa-github white-text" alt="GitHub"></i></a>
+                </div>                    
+
+                <div style="font-size:9em; color:white; text-align:center" class="col s4 social">
+                    <a href="https://stackoverflow.com/users/8589446/arnold-z?tab=profile" target="_blank"><i class="fab fa-stack-overflow white-text" alt="Stack Overflow"></i></a>
+                </div>                    
+                
+            </div>
+
+
+        </div>
+
         <!-- Contact End -->
     </div>
     <!-- Content End -->
-
-    <footer class="page-footer transparent">
-             <div class="footer-copyright">
-              <div class="container">
-                <p class="flow-text">Copyright © 2018 Arnold R Zimmerman Jr</p>
-              </div>
-            </div>
+    <footer class="footer-copyright">
+        <div class="container">
+            <p class="flow-text white-text">Copyright © 2018 Arnold R Zimmerman Jr</p>
+        </div>
     </footer>
-
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="public/js/materialize.min.js"></script>
